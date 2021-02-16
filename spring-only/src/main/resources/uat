@@ -1,0 +1,8 @@
+spring:
+  config:
+    activate:
+      on-profile: uat
+main:
+  services:
+    defaultTimeout: 1984
+    newDefaultTimeout: 1984ms

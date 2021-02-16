@@ -1,0 +1,28 @@
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+spring:
+  config:
+    import:
+      - classpath:prod.properties
+      - classpath:uat[.yaml]
+  main:
+    cloud-platform: kubernetes
+  profiles:
+    active: prod
+main:
+  services:
+    defaultTimeout: -1
+    newDefaultTimeout: 999d
+---
+spring:
+  config:
+    activate:
+      on-profile: uat
+main:
+  services:
+    defaultTimeout: 200
+    newDefaultTimeout: 200ms

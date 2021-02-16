@@ -1,0 +1,4 @@
+main:
+  services:
+    defaultTimeout: 10000
+    newDefaultTimeout: 1d
