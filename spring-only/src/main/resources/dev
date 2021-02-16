@@ -1,7 +1,7 @@
 spring:
   config:
     activate:
-      on-profile: uat
+      on-profile: dev
 main:
   services:
     defaultTimeout: 1984

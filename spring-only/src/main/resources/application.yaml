@@ -8,11 +8,11 @@ spring:
   config:
     import:
       - classpath:prod.properties
-      - classpath:uat[.yaml]
+      - classpath:dev[.yaml]
   main:
     cloud-platform: kubernetes
   profiles:
-    active: prod
+    active: dev
 main:
   services:
     defaultTimeout: -1
@@ -21,7 +21,7 @@ main:
 spring:
   config:
     activate:
-      on-profile: uat
+      on-profile: dev
 main:
   services:
     defaultTimeout: 200
