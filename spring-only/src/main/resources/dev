@@ -2,7 +2,7 @@ spring:
   config:
     activate:
       on-profile: dev
-main:
-  services:
+modules:
+  properties:
     defaultTimeout: 1984
     newDefaultTimeout: 1984ms

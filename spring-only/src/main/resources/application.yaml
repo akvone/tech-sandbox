@@ -12,17 +12,9 @@ spring:
   main:
     cloud-platform: kubernetes
   profiles:
-    active: dev
-main:
-  services:
+    active: prod
+
+modules:
+  properties:
     defaultTimeout: -1
     newDefaultTimeout: 999d
----
-spring:
-  config:
-    activate:
-      on-profile: dev
-main:
-  services:
-    defaultTimeout: 200
-    newDefaultTimeout: 200ms
