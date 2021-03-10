@@ -13,6 +13,9 @@ spring:
     cloud-platform: kubernetes
   profiles:
     active: prod
+  cache:
+    cache-names: "main"
+    type: jcache
 
 modules:
   properties:
