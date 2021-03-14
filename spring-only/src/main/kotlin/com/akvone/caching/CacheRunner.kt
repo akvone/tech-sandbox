@@ -1,12 +1,11 @@
-package com.akvone
+package com.akvone.caching
 
-import com.akvone.caching.CachedService
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
 import org.springframework.stereotype.Component
 
 @Component
-class MainRunner(
+class CacheRunner(
     private val cachedService: CachedService
 ) : ApplicationRunner {
 
