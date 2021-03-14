@@ -10,6 +10,7 @@ spring:
       - classpath:config/profile/dev[.yaml]
       - classpath:config/profile/prod.properties
       - classpath:config/properties/properties.yaml
+      - classpath:config/dynamic_properties/d.properties
   main:
     cloud-platform: kubernetes
   profiles:
