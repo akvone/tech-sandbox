@@ -21,6 +21,6 @@ public class JavaMainController {
 
   @PostMapping("simple")
   public void getSimpleResult(@RequestBody @Valid SimpleRequest request) {
-    System.out.println(request);
+    log.info(request.toString());
   }
 }

@@ -12,7 +12,7 @@ import javax.cache.CacheManager
 class CachingConfiguration
 
 @Component
-class CacheCustomizer: JCacheManagerCustomizer {
+class CacheCustomizer : JCacheManagerCustomizer {
 
     private val log = LoggerFactory.getLogger(CacheCustomizer::class.java)
 

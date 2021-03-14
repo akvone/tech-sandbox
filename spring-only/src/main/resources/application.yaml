@@ -7,8 +7,9 @@ management:
 spring:
   config:
     import:
-      - classpath:prod.properties
-      - classpath:dev[.yaml]
+      - classpath:config/profile/dev[.yaml]
+      - classpath:config/profile/prod.properties
+      - classpath:config/properties/properties.yaml
   main:
     cloud-platform: kubernetes
   profiles:
@@ -16,8 +17,3 @@ spring:
   cache:
     cache-names: "main"
     type: jcache
-
-modules:
-  properties:
-    defaultTimeout: -1
-    newDefaultTimeout: 999d

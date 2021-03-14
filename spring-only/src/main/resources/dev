@@ -1,8 +1,0 @@
-spring:
-  config:
-    activate:
-      on-profile: dev
-modules:
-  properties:
-    defaultTimeout: 1984
-    newDefaultTimeout: 1984ms

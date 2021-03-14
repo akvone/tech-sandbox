@@ -55,6 +55,10 @@
       <groupId>jakarta.validation</groupId>
       <artifactId>jakarta.validation-api</artifactId>
     </dependency>
+    <dependency>
+      <artifactId>jackson-module-kotlin</artifactId>
+      <groupId>com.fasterxml.jackson.module</groupId>
+    </dependency>
     <!--Test-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
