@@ -12,9 +12,9 @@ class DynamicPropertiesBeanPostProcessor : BeanPostProcessor {
             val configurationPropertiesAnnotation = clazz.getAnnotation(ConfigurationProperties::class.java)
 
             clazz.declaredFields.forEach { field ->
-                if (field.type == Dynamic::class.java) {
+                if (field.type == DynamicValue::class.java) {
                     val declaredMethod = clazz.getDeclaredMethod("get${field.name.capitalize()}")
-                    val dynamicValue = declaredMethod.invoke(bean) as Dynamic<*>
+                    val dynamicValue = declaredMethod.invoke(bean) as DynamicValue<*>
                     dynamicValue.fullPropertyName = "${configurationPropertiesAnnotation.prefix}.${field.name}"
                 }
             }

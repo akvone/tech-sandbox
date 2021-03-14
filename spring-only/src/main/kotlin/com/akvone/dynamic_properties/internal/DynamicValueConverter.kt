@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component
 @ConfigurationPropertiesBinding
 class DynamicValueConverter : GenericConverter {
     override fun getConvertibleTypes(): Set<GenericConverter.ConvertiblePair> {
-        return setOf(GenericConverter.ConvertiblePair(String::class.java, Dynamic::class.java))
+        return setOf(GenericConverter.ConvertiblePair(String::class.java, DynamicValue::class.java))
     }
 
-    override fun convert(source: Any?, sourceType: TypeDescriptor, targetType: TypeDescriptor): Dynamic<*> {
-        return Dynamic(source)
+    override fun convert(source: Any?, sourceType: TypeDescriptor, targetType: TypeDescriptor): DynamicValue<*> {
+        return DynamicValue(source)
     }
 }
