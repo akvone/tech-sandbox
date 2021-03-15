@@ -2,12 +2,11 @@ package com.akvone.dynamic_properties.internal
 
 import org.slf4j.LoggerFactory
 
-data class DynamicValue<T>(
-    val initialValue: T
+data class DynamicProperty<T>(
+    private val initialValue: T,
+    private val fullPropertyName: String
 ) {
-    private val log = LoggerFactory.getLogger(DynamicValue::class.java)
-
-    internal lateinit var fullPropertyName: String
+    private val log = LoggerFactory.getLogger(DynamicProperty::class.java)
 
     fun get(): T {
         return getPropertyInExternalSystem() ?: initialValue
