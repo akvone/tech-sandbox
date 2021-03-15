@@ -1,5 +1,6 @@
 modules:
   properties:
     defaultTimeout: 10000
-    newDefaultTimeout: 1d
+    duration: 1d
     period: 1y
+    dataSize: 1MB
