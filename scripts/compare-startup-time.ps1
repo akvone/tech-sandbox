@@ -6,7 +6,7 @@ Set-Variable -Name "projectFolder" -Value "../$moduleName"
 Set-Variable -Name "extractedJarFolder" -Value "extracted"
 # ...
 cd $projectFolder
-#mvn clean package
+mvn clean package
 cd target
 mkdir $extractedJarFolder
 cd $extractedJarFolder
