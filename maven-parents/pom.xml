@@ -10,8 +10,7 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>spring-boot-mixed-kotlin-parent</module>
-    <module>spring-boot-kotlin-parent</module>
+    <module>custom-spring-boot-parent</module>
   </modules>
 
 </project>
