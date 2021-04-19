@@ -13,7 +13,7 @@
     <module>maven-parents</module>
     <module>spring-boot</module>
     <module>spring-boot-security</module>
-    <module>with-postgresql</module>
+    <module>spring-boot-postgresql</module>
   </modules>
 
 </project>
