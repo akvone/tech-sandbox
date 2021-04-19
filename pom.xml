@@ -11,7 +11,7 @@
 
   <modules>
     <module>maven-parents</module>
-    <module>spring-only</module>
+    <module>spring-boot</module>
     <module>spring-boot-security</module>
     <module>with-postgresql</module>
   </modules>
