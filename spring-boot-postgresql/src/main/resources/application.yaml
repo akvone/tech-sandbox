@@ -5,7 +5,7 @@ spring:
       ddl-auto: update
     open-in-view: false
   datasource:
-    url: "jdbc:postgresql://localhost:5432/fullsandbox" # TODO Add flyway to initialize database
+    url: "jdbc:postgresql://localhost:5432/sandbox"
     username: "postgres"
     password: "postgres"
 
