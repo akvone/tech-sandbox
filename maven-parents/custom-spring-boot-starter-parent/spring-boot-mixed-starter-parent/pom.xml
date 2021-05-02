@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>spring-boot-mixed-parent</artifactId>
+  <artifactId>spring-boot-mixed-starter-parent</artifactId>
   <packaging>pom</packaging>
 
   <dependencies>

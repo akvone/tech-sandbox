@@ -17,7 +17,7 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>spring-boot-mixed-parent</module>
+    <module>spring-boot-mixed-starter-parent</module>
     <module>spring-boot-kotlin-parent</module>
   </modules>
 
