@@ -50,12 +50,6 @@
       <artifactId>jackson-module-kotlin</artifactId>
       <groupId>com.fasterxml.jackson.module</groupId>
     </dependency>
-    <!--Test-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 
 

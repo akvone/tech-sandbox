@@ -25,6 +25,15 @@
     <spring-boot.version>2.4.4</spring-boot.version>
   </properties>
 
+  <dependencies>
+    <!--Test-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>
