@@ -14,6 +14,7 @@
     <module>spring-boot</module>
     <module>spring-boot-postgresql</module>
     <module>spring-boot-security</module>
+    <module>spring-cloud</module>
   </modules>
 
 </project>

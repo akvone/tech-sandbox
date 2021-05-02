@@ -11,6 +11,7 @@
 
   <modules>
     <module>custom-spring-boot-parent</module>
+    <module>custom-spring-cloud-starter-parent</module>
   </modules>
 
 </project>
