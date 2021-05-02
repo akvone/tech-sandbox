@@ -20,7 +20,7 @@ spec:
       containers:
         - name: spring-boot
           image: 'akvone/sandbox-spring-boot:1.0-SNAPSHOT'
-          resources: {}
+          resources: { }
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
           imagePullPolicy: IfNotPresent
@@ -29,7 +29,7 @@ spec:
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: Cl
-      securityContext: {}
+      securityContext: { }
       schedulerName: default-scheduler
   strategy:
     type: RollingUpdate

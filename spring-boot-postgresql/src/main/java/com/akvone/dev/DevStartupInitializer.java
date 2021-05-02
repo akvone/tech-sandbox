@@ -16,7 +16,7 @@ public class DevStartupInitializer {
   private final CityRepository cityRepository;
 
   @EventListener(ApplicationReadyEvent.class)
-  public void onApplicationReadyEvent(){
+  public void onApplicationReadyEvent() {
     CityEntity cityEntity = new CityEntity();
     cityEntity.setName("Moscow");
     StreetEntity streetEntity = new StreetEntity();
