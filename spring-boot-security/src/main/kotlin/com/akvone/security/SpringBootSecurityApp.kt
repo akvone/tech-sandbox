@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
-class ApplicationWithSecurity
+class SpringBootSecurityApp
 
 fun main() {
-    SpringApplication.run(ApplicationWithSecurity::class.java)
+    SpringApplication.run(SpringBootSecurityApp::class.java)
 }

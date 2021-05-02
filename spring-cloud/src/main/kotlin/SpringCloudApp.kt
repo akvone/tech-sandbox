@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SpringCloudApplication
+class SpringCloudApp
 
 fun main() {
-    runApplication<SpringCloudApplication>()
+    runApplication<SpringCloudApp>()
 }
