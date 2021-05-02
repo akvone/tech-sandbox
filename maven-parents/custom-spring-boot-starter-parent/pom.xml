@@ -23,6 +23,7 @@
 
   <properties>
     <spring-boot.version>2.4.4</spring-boot.version>
+    <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
   </properties>
 
   <dependencies>
@@ -33,7 +34,7 @@
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-boot-starter</artifactId>
-      <version>3.0.0</version>
+      <version>${springfox-boot-starter.version}</version>
     </dependency>
     <!--Test-->
     <dependency>
