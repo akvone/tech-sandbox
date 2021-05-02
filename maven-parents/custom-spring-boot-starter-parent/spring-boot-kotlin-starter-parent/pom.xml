@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>spring-boot-kotlin-parent</artifactId>
+  <artifactId>spring-boot-kotlin-starter-parent</artifactId>
   <packaging>pom</packaging>
 
   <dependencies>
