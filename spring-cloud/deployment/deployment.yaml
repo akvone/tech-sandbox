@@ -23,7 +23,7 @@ spec:
           resources: { }
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           securityContext:
             privileged: false
           ports:

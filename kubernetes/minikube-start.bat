@@ -2,3 +2,4 @@
 minikube start
 minikube kubectl
 minikube dashboard
+minikube tunnel
