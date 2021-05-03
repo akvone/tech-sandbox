@@ -1,0 +1,10 @@
+application:
+  profile-adder-environment-post-processor:
+    enabled: true
+    kubernetes:
+      jupiter: prod
+      venus: uat
+      default: integration
+---
+spring.config.activate.on-profile: dev
+application.profile-adder-environment-post-processor.enabled: false
