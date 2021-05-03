@@ -28,7 +28,6 @@ spec:
             privileged: false
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
-      dnsPolicy: Cl
       securityContext: { }
       schedulerName: default-scheduler
   strategy:
