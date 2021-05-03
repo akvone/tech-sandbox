@@ -3,3 +3,10 @@ management:
     web:
       exposure:
         include: "*"
+  endpoint:
+    env:
+      post:
+        enabled: true
+spring:
+  config:
+    import: properties-state.yaml
