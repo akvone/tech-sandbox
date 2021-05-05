@@ -8,5 +8,5 @@ application:
 ---
 spring.config.activate.on-profile: dev
 application.profile-adder-environment-post-processor.enabled: false
-encrypt: # Uses org.springframework.security.crypto.encrypt.Encryptors.standard
+encrypt: # Uses org.springframework.security.crypto.encrypt.Encryptors#standard
   key: 11symbolkey
