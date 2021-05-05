@@ -9,4 +9,6 @@ management:
         enabled: true
 spring:
   config:
-    import: properties-state.yaml
+    import:
+      - properties-state.yaml
+      - encrypted-properties.yaml
