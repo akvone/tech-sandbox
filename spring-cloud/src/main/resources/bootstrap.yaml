@@ -5,7 +5,7 @@ encrypt:
   key: 11symbolkey
 
 application:
-  profile-adder-environment-post-processor:
+  runtime-profile-activation:
     enabled: true
     kubernetes:
       jupiter: prod
@@ -13,4 +13,4 @@ application:
       default: integration
 ---
 spring.config.activate.on-profile: dev
-application.profile-adder-environment-post-processor.enabled: false
+application.runtime-profile-activation.enabled: false

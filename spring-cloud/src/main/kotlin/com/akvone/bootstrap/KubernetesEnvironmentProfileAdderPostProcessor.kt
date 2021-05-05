@@ -10,10 +10,10 @@ import org.springframework.core.env.get
 @Configuration
 class KubernetesEnvironmentProfileAdderPostProcessor : EnvironmentPostProcessor {
 
-    val postProcessorConditionalProperty = "application.profile-adder-environment-post-processor.enabled"
+    val postProcessorConditionalProperty = "application.runtime-profile-activation.enabled"
 
     val envVariableToSearchForRuntimeValue: String = "KUBERNETES_NAMESPACE"
-    val bootstrapPropertyMappingKey = "application.profile-adder-environment-post-processor.kubernetes"
+    val bootstrapPropertyMappingKey = "application.runtime-profile-activation.kubernetes"
 
     override fun postProcessEnvironment(environment: ConfigurableEnvironment, application: SpringApplication) {
         if (environment.getProperty(postProcessorConditionalProperty, Boolean::class.java, false)) {
