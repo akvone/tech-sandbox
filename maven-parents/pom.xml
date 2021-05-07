@@ -10,6 +10,7 @@
   <packaging>pom</packaging>
 
   <modules>
+    <module>custom-kotlin-parent</module>
     <module>custom-spring-boot-starter-parent</module>
     <module>custom-spring-cloud-starter-parent</module>
   </modules>
