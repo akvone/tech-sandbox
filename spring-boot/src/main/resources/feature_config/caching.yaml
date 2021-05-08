@@ -3,3 +3,6 @@ spring:
   cache:
     cache-names: "main"
     type: jcache
+---
+#  This profile hides some components to preserve a default jCache AutoConfiguration
+spring.config.activate.on-profile: feature-custom-cache
