@@ -25,6 +25,13 @@
   </properties>
 
   <dependencies>
+    <!--Shared resources-->
+    <dependency>
+      <groupId>com.akvone</groupId>
+      <artifactId>shared-resources</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <!--Prod-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
