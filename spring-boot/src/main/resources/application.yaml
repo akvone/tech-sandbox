@@ -1,20 +1,12 @@
-management:
-  endpoints:
-    enabled-by-default: true
-    web:
-      exposure:
-        include: "*"
 spring:
   config:
     import:
-      - classpath:config/profile/dev[.yaml]
-      - classpath:config/profile/prod.properties
-      - classpath:config/properties/properties.yaml
-      - classpath:config/dynamic_properties/d.properties
+      - feature_config/profile/main.yaml
+      - feature_config/actuator.yaml
+      - feature_config/caching.yaml
+      - feature_config/dynamic_properties.yaml
+      - feature_config/properties_conversion.yaml
   main:
     cloud-platform: kubernetes
   profiles:
     active: prod
-  cache:
-    cache-names: "main"
-    type: jcache

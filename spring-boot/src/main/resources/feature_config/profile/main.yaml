@@ -1,0 +1,5 @@
+spring:
+  config:
+    import:
+      - dev[.yaml]
+      - prod.properties

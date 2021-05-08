@@ -1,4 +1,4 @@
-package com.akvone.properties
+package com.akvone.properties_conversion
 
 import com.akvone.lifecycle.MainEventListener
 import org.slf4j.LoggerFactory
@@ -15,10 +15,10 @@ import java.time.Period
 @Component
 class PropertiesRunner(
     val convertedProperties: ConvertedProperties,
-    @Value("\${modules.properties.defaultTimeout}") val defaultTimeout: Long,
-    @Value("\${modules.properties.duration}") val duration: Duration,
-    @Value("\${modules.properties.period}") val period: Period,
-    @Value("\${modules.properties.dataSize}") val dataSize: DataSize,
+    @Value("\${feature.properties-conversion.defaultTimeout}") val defaultTimeout: Long,
+    @Value("\${feature.properties-conversion.duration}") val duration: Duration,
+    @Value("\${feature.properties-conversion.period}") val period: Period,
+    @Value("\${feature.properties-conversion.dataSize}") val dataSize: DataSize,
 ) : ApplicationRunner {
 
     private val log = LoggerFactory.getLogger(MainEventListener::class.java)

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component
 @EnableConfigurationProperties(DynamicProperties::class)
 class DynamicRunner(
     private val dynamicProperties: DynamicProperties,
-    @Value("\${modules.dynamic-properties.baseCurrency}") val baseCurrency: DynamicProperty<String>,
+    @Value("\${feature.dynamic-properties.baseCurrency}") val baseCurrency: DynamicProperty<String>,
 ) : ApplicationRunner {
 
     private val log = LoggerFactory.getLogger(DynamicRunner::class.java)

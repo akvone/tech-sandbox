@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding
 
 @ConstructorBinding
-@ConfigurationProperties(prefix = "modules.profile")
+@ConfigurationProperties(prefix = "feature.profile")
 data class DefinedByProfileProperties(
 
     val location: String

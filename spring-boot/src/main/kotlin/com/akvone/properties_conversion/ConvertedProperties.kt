@@ -1,4 +1,4 @@
-package com.akvone.properties
+package com.akvone.properties_conversion
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding
@@ -6,7 +6,7 @@ import org.springframework.util.unit.DataSize
 import java.time.Duration
 import java.time.Period
 
-@ConfigurationProperties("modules.properties")
+@ConfigurationProperties("feature.properties-conversion")
 @ConstructorBinding
 data class ConvertedProperties(
 

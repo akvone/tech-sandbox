@@ -6,9 +6,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding
 
 @ConstructorBinding
-@ConfigurationProperties(prefix = "modules.dynamic-properties")
+@ConfigurationProperties(prefix = "feature.dynamic-properties")
 data class DynamicProperties(
 
-    @DynamicPropertyKey("modules.dynamic-properties.baseCurrency")
+    @DynamicPropertyKey("feature.dynamic-properties.baseCurrency")
     val baseCurrency: DynamicProperty<String>
 )

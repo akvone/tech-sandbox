@@ -1,5 +1,5 @@
-modules:
-  properties:
+feature:
+  properties-conversion:
     defaultTimeout: 10000
     duration: 1d
     period: 1y
