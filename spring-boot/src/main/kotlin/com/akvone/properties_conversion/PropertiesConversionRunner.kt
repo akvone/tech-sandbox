@@ -13,7 +13,7 @@ import java.time.Period
 
 @EnableConfigurationProperties(ConvertedProperties::class)
 @Component
-class PropertiesRunner(
+class PropertiesConversionRunner(
     val convertedProperties: ConvertedProperties,
     @Value("\${feature.properties-conversion.defaultTimeout}") val defaultTimeout: Long,
     @Value("\${feature.properties-conversion.duration}") val duration: Duration,

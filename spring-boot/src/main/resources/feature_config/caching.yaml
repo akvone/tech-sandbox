@@ -1,3 +1,4 @@
+spring.config.activate.on-profile: feature-jcache
 spring:
   cache:
     cache-names: "main"

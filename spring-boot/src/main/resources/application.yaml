@@ -9,4 +9,4 @@ spring:
   main:
     cloud-platform: kubernetes
   profiles:
-    active: prod
+    active: prod, feature-jcache
