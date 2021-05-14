@@ -16,6 +16,9 @@
     <properties>
         <kotlin.version>1.5.0</kotlin.version>
         <kotlin-maven-plugin.jvmTarget>11</kotlin-maven-plugin.jvmTarget>
+
+        <!--Actually, the next property is not required here, but it is very handy to keep all the dependencies aligned among modules-->
+        <spring-boot-dependencies.version>2.4.4</spring-boot-dependencies.version>
     </properties>
 
     <dependencies>
@@ -36,6 +39,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot-dependencies.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
