@@ -12,7 +12,7 @@
   <modules>
     <module>maven-parents</module>
     <module>kotlin</module>
-    <module>shared-resources</module>
+    <module>shared</module>
     <module>spring-boot</module>
     <module>spring-boot-postgresql</module>
     <module>spring-boot-security</module>
