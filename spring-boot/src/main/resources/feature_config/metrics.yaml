@@ -1,0 +1,9 @@
+management:
+  metrics:
+    export:
+      influx:
+        db: sandbox
+        password: sandbox
+        user-name: sandbox
+        uri: http://localhost:8086
+        step: 10s
