@@ -11,6 +11,7 @@
 
     <modules>
         <module>shared-resources</module>
+        <module>shared-utils</module>
     </modules>
 
 </project>
