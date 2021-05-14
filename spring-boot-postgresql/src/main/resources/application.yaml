@@ -6,8 +6,8 @@ spring:
     open-in-view: false
   datasource:
     url: "jdbc:postgresql://localhost:5432/sandbox"
-    username: "postgres"
-    password: "postgres"
+    username: "sandbox"
+    password: "sandbox"
 
 #logging:
 #  level:
