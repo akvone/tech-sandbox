@@ -6,7 +6,7 @@ version: '3.1'
 services:
 
   db:
-    image: postgres
+    image: postgres:13
     restart: always
     environment:
       POSTGRES_PASSWORD: sandbox
@@ -14,9 +14,3 @@ services:
       POSTGRES_DB: sandbox
     ports:
       - 5432:5432
-
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8081:8081
