@@ -1,18 +1,18 @@
+# Initially copied from https://hub.docker.com/_/postgres
+
 # Use postgres/example user/password credentials
 version: '3.1'
 
 services:
+
   db:
     image: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: sandbox
-    ports:
-      - 5432:5432
+      POSTGRES_PASSWORD: example
 
   adminer:
     image: adminer
     restart: always
     ports:
-      - 8081:8081
+      - 8080:8080
