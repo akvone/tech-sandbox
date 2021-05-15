@@ -13,7 +13,7 @@ import org.springframework.test.web.servlet.post
 
 @AutoConfigureMockMvc
 @TestConstructor(autowireMode = TestConstructor.AutowireMode.ALL)
-internal class ControllerWithJdbcAccessTest(
+internal class ControllerWithDataJdbcAccessTest(
     private val mockMvc: MockMvc
 ) : SpringBootBaseTest() {
 

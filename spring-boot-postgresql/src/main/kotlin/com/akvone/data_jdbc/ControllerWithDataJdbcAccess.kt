@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping(DATA_JDBC)
-class ControllerWithJdbcAccess(
+class ControllerWithDataJdbcAccess(
     private val colorRepository: ColorRepository
 ) {
 
