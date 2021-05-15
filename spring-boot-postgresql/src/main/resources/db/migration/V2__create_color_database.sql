@@ -1,0 +1,5 @@
+CREATE TABLE COLOR
+(
+    id SERIAL PRIMARY KEY,
+    color VARCHAR
+)
