@@ -7,5 +7,6 @@ spring:
   config:
     import:
       - shared/actuator.yaml
+      - shared/server.yaml
       - feature_config/properties-state.yaml
       - feature_config/encrypted-properties.yaml
