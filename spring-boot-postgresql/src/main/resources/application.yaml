@@ -3,6 +3,7 @@ spring:
     import:
       - shared/actuator.yaml
       - shared/server.yaml
+      - feature_config/data_jpa.yaml
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:

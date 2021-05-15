@@ -1,0 +1,10 @@
+data-jpa:
+  cities:
+    - name: Moscow
+      streets:
+        - Lenina
+        - Nikol'Skaya
+    - name: Saint Petersburg
+      streets:
+        - Lenina
+        - Vyazemsky Lane
