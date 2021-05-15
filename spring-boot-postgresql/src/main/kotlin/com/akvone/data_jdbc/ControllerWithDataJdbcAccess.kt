@@ -1,10 +1,10 @@
 package com.akvone.data_jdbc
 
-import com.akvone.Features.DATA_JDBC
+import com.akvone.Features
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@RequestMapping(DATA_JDBC)
+@RequestMapping(Features.DATA_JDBC)
 class ControllerWithDataJdbcAccess(
     private val colorRepository: ColorRepository
 ) {
