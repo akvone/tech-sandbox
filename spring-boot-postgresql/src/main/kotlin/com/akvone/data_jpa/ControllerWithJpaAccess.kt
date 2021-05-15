@@ -4,6 +4,7 @@ import com.akvone.Features
 import com.akvone.buildLogger
 import com.akvone.data_jpa.entities.CityEntity
 import com.akvone.data_jpa.repositories.CityRepository
+import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
@@ -18,6 +19,7 @@ class ControllerWithJpaAccess(
     val log = buildLogger()
 
     @GetMapping("/cities/{id}")
+    @Transactional
     fun getCity(@PathVariable id: Long): CityEntity {
         val city = cityRepository.getOne(id)
         for (street in city.streets) {
