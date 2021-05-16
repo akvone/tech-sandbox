@@ -10,6 +10,7 @@ Most services uses `sandbox`/`sandbox` as user/password pairs
 # Modules:
 
 * maven-parents
+* kotlin
 * shared
 * [spring-boot](spring-boot/README.md)
 * [spring-cloud](spring-cloud/README.md)
