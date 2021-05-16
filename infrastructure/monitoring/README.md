@@ -24,3 +24,6 @@ No additional configuration is required
     1. `http://influxdb:8086` Connection URL
     3. `sandbox` Username
     4. `sandbox` Password
+
+# Sandbox usages:
+1. [spring-boot](../../sandboxes/spring-boot/README.md#metrics-for-resilience4j)
