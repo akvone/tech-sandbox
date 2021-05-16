@@ -8,7 +8,7 @@ inside `src/main/kotlin/com/akvone/properties` package
 # Features:
 ## Metrics for Resilience4j
 
-![Resilience4j dashboard](./docs/Resilience4j dashboard.png)
+![Resilience4j dashboard](docs/resilience4j-dashboard.png)
 
 Steps:
 1. Start the app in `monitoring/influxdb-grafana-chronograf` module
