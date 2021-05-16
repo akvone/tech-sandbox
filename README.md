@@ -3,6 +3,13 @@
 The main purpose of the `sandbox` project is to give a starting point with an existing code base to play with different
 frameworks, libraries, and technologies.
 
+# Prerequisites
+
+* Maven
+* JDK v8 (v11 for some modules)
+
+Installed Docker is desirable but is not required 
+
 # Credentials
 
 Most services uses `sandbox`/`sandbox` as user/password pairs
