@@ -25,5 +25,5 @@ No additional configuration is required
     3. `sandbox` Username
     4. `sandbox` Password
 
-# Sandbox usages:
+# Usages:
 1. [spring-boot](../../sandboxes/spring-boot/README.md#metrics-for-resilience4j)
