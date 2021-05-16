@@ -1,5 +1,6 @@
 # This script compares time for .jar startup and unpacked .jar startup
 # IMPORTANT: Before execution add `.close()` to finish SpringBoot process right after startup
+# TODO: Check that it works
 Set-Variable -Name "initialFolder" -Value "$PWD"
 Set-Variable -Name "moduleName" -Value "spring-boot"
 Set-Variable -Name "projectFolder" -Value "../$moduleName"

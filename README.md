@@ -10,9 +10,9 @@ Most services uses `sandbox`/`sandbox` as user/password pairs
 # Modules:
 
 * maven-parents
-* kotlin
-* shared
-* [spring-boot](spring-boot/README.md)
-* [spring-cloud](spring-cloud/README.md)
-* [spring-boot-postgresql](spring-boot-postgresql/README.md)
-* [spring-boot-security](spring-boot-security/README.md)
+* shared - modules which is shared between other modules
+* [kotlin sandbox](sandboxes/kotlin/README.md)
+* [spring-boot sandbox](sandboxes/spring-boot/README.md)
+* [spring-cloud sandbox](sandboxes/spring-cloud/README.md)
+* [spring-boot-postgresql sandbox](sandboxes/spring-boot-postgresql/README.md)
+* [spring-boot-security sandbox](sandboxes/spring-boot-security/README.md)

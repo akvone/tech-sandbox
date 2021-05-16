@@ -11,12 +11,8 @@
 
   <modules>
     <module>maven-parents</module>
-    <module>kotlin</module>
+    <module>sandboxes</module>
     <module>shared</module>
-    <module>spring-boot</module>
-    <module>spring-boot-postgresql</module>
-    <module>spring-boot-security</module>
-    <module>spring-cloud</module>
   </modules>
 
 </project>
