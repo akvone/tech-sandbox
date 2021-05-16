@@ -7,12 +7,19 @@ frameworks, libraries, and technologies.
 
 Most services uses `sandbox`/`sandbox` as user/password pairs
 
-# Modules:
-
-* maven-parents
-* shared - modules which is shared between other modules
+# Modules
+## Sandbox modules:
 * [kotlin sandbox](sandboxes/kotlin/README.md)
 * [spring-boot sandbox](sandboxes/spring-boot/README.md)
 * [spring-cloud sandbox](sandboxes/spring-cloud/README.md)
 * [spring-boot-postgresql sandbox](sandboxes/spring-boot-postgresql/README.md)
 * [spring-boot-security sandbox](sandboxes/spring-boot-security/README.md)
+  
+## Other modules
+* infrastructure - useful scripts and docker-compose.yaml files
+    * kubernetes
+    * [monitoring](infrastructure/monitoring/README.md)
+* maven-parents - sandbox modules use them
+* shared
+    * shared-resources
+    * shared-utils
