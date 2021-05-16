@@ -20,10 +20,8 @@ class BackgroundEventGenerator(
     private val scheduledExecutorService: ScheduledExecutorService = Executors.newScheduledThreadPool(100)
     @Volatile
     private var scheduledFuture: ScheduledFuture<*>
+        = scheduledExecutorService.schedule({}, 0, TimeUnit.SECONDS) // TODO: Use some mocked ScheduledFuture instead
 
-    init {
-        scheduledFuture = scheduledExecutorService.schedule({}, 0, TimeUnit.SECONDS) // TODO: Use some mocked ScheduledFuture instead
-    }
 
     @PreDestroy
     fun preDestroy(){
