@@ -16,16 +16,16 @@ Most services uses `sandbox`/`sandbox` as user/password pairs
 
 # Modules
 ## Sandbox modules:
-* [kotlin sandbox](sandboxes/kotlin/README.md)
-* [spring-boot sandbox](sandboxes/spring-boot/README.md)
-* [spring-cloud sandbox](sandboxes/spring-cloud/README.md)
-* [spring-boot-postgresql sandbox](sandboxes/spring-boot-postgresql/README.md)
-* [spring-boot-security sandbox](sandboxes/spring-boot-security/README.md)
+* [kotlin sandbox](sandboxes/kotlin)
+* [spring-boot sandbox](sandboxes/spring-boot)
+* [spring-cloud sandbox](sandboxes/spring-cloud)
+* [spring-boot-postgresql sandbox](sandboxes/spring-boot-postgresql)
+* [spring-boot-security sandbox](sandboxes/spring-boot-security)
   
 ## Other modules
 * infrastructure - useful scripts and docker-compose.yaml files
     * kubernetes
-    * [monitoring](infrastructure/monitoring/README.md)
+    * [monitoring](infrastructure/monitoring)
 * maven-parents - sandbox modules use them
 * shared
     * shared-resources
