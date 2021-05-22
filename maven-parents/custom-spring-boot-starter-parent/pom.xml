@@ -65,8 +65,14 @@
           <execution>
             <goals>
               <goal>build-info</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>custom-build-image</id>
+            <goals>
               <goal>build-image</goal>
             </goals>
+            <phase>install</phase>
           </execution>
         </executions>
       </plugin>
