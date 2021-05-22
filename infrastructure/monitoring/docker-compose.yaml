@@ -4,7 +4,7 @@ version: '2'
 services:
 
   influxdb:
-    image: influxdb:1.8.5 # v2.x requires different configuration
+    image: influxdb:1.8.5 # v2.x requires a different configuration
     ports:
       - '8086:8086'
     volumes:

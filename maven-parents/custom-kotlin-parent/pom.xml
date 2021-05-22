@@ -16,6 +16,8 @@
     <properties>
         <kotlin.version>1.4.30</kotlin.version>
         <kotlin-maven-plugin.jvmTarget>11</kotlin-maven-plugin.jvmTarget>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <!--Actually, the next property is not required here, but it is very handy to keep all the dependencies aligned among modules-->
         <spring-boot-dependencies.version>2.4.3</spring-boot-dependencies.version>
