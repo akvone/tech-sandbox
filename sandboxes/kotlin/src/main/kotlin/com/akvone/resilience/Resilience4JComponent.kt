@@ -5,10 +5,11 @@ import io.github.resilience4j.bulkhead.ThreadPoolBulkheadConfig
 import io.github.resilience4j.decorators.Decorators
 import io.github.resilience4j.timelimiter.TimeLimiter
 import io.github.resilience4j.timelimiter.TimeLimiterConfig
+import java.io.Closeable
 import java.time.Duration
 import java.util.concurrent.Executors
 
-abstract class Resilience4JComponent(timeoutDuration: Duration) : AutoCloseable {
+abstract class Resilience4JComponent(timeoutDuration: Duration) : Closeable {
 
     val threadPoolBulkhead = ThreadPoolBulkhead.of(
         "UNDEFINED", ThreadPoolBulkheadConfig.custom()
