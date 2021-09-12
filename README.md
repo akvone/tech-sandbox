@@ -12,7 +12,7 @@ Installed Docker is desirable but is not required
 
 # Credentials
 
-Most services uses `sandbox`/`sandbox` as user/password pairs
+Most services use `sandbox`/`sandbox` as user/password pairs
 
 # Modules
 ## Sandbox modules:
