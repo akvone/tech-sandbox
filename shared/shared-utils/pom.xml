@@ -6,7 +6,7 @@
 
     <parent>
         <artifactId>custom-kotlin-parent</artifactId>
-        <groupId>com.akvone</groupId>
+        <groupId>com.akvone.sandbox</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../maven-parents/custom-kotlin-parent</relativePath>
     </parent>

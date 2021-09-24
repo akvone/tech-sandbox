@@ -3,11 +3,11 @@
     <module name="spring-boot-postgresql" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="com.akvone.*" />
+        <option name="PATTERN" value="com.akvone.sandbox.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.SpringBootPostgresqlApp" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.SpringBootPostgresqlApp" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <option name="SHORTEN_COMMAND_LINE" value="NONE" />
     <method v="2">

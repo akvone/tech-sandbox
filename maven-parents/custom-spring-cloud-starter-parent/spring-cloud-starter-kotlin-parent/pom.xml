@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.akvone</groupId>
+    <groupId>com.akvone.sandbox</groupId>
     <artifactId>custom-spring-cloud-starter-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
