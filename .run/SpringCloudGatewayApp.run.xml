@@ -1,14 +1,13 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SpringCloudApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-    <module name="spring-cloud" />
+  <configuration default="false" name="SpringCloudGatewayApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <module name="spring-cloud-gateway" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.akvone.sandbox.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.SpringCloudApp" />
-    <option name="ACTIVE_PROFILES" value="dev" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.SpringCloudGatewayApp" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <option name="SHORTEN_COMMAND_LINE" value="NONE" />
     <method v="2">
