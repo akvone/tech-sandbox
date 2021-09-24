@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-parent</artifactId>
-    <version>2020.0.2</version>
+    <version>2020.0.4</version>
     <relativePath/>
   </parent>
 
@@ -22,6 +22,7 @@
 
   <properties>
     <spring-cloud.version>2020.0.2</spring-cloud.version>
+    <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
   </properties>
 
   <dependencies>
@@ -44,7 +45,7 @@
     <dependency>
       <groupId>io.springfox</groupId>
       <artifactId>springfox-boot-starter</artifactId>
-      <version>3.0.0</version>
+      <version>${springfox-boot-starter.version}</version>
     </dependency>
     <!--Test-->
     <dependency>
