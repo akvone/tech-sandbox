@@ -18,9 +18,10 @@ Most services use `sandbox`/`sandbox` as user/password pairs
 ## Sandbox modules:
 * [kotlin sandbox](sandboxes/kotlin)
 * [spring-boot sandbox](sandboxes/spring-boot)
-* [spring-cloud sandbox](sandboxes/spring-cloud)
 * [spring-boot-postgresql sandbox](sandboxes/spring-boot-postgresql)
 * [spring-boot-security sandbox](sandboxes/spring-boot-security)
+* [spring-cloud sandbox](sandboxes/spring-cloud)
+* [spring-cloud-gateway sandbox](sandboxes/spring-cloud-gateway)
   
 ## Other modules
 * infrastructure - useful scripts and docker-compose.yaml files
