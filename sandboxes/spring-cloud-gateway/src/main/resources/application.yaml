@@ -11,6 +11,8 @@ spring:
           uri: https://quiet-star-2981.getsandbox.com:443
           predicates:
             - Path=/{segment}
+          filters:
+            - Security
 management:
   endpoints:
     web:
