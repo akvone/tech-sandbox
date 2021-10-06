@@ -17,14 +17,13 @@ class SecurityConfiguration {
     fun springSecurityFilterChain(
         http: ServerHttpSecurity,
         customServerAuthenticationConverter: CustomServerAuthenticationConverter,
-        customAuthenticationWebFilter: CustomAuthenticationWebFilter
     ): SecurityWebFilterChain? {
         http.httpBasic()
         http.formLogin().disable()
         http.logout().disable()
         http.csrf().disable()
 
-
+        val customAuthenticationWebFilter = CustomAuthenticationWebFilter()
         customAuthenticationWebFilter.setServerAuthenticationConverter(customServerAuthenticationConverter)
         http.addFilterAt(customAuthenticationWebFilter, SecurityWebFiltersOrder.AUTHENTICATION)
         val combinedManager = CombinedReactiveAuthorizationManager()
