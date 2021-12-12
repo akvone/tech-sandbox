@@ -21,7 +21,7 @@
   </modules>
 
   <properties>
-    <spring-cloud.version>2020.0.2</spring-cloud.version>
+    <spring-cloud.version>2020.0.4</spring-cloud.version>
     <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
   </properties>
 

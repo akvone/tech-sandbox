@@ -14,14 +14,13 @@
     <packaging>pom</packaging>
 
     <properties>
-        <kotlin.version>1.4.30</kotlin.version>
-        <kotlinx.version>1.4.3</kotlinx.version>
+        <!--Actually, the next property is not required here, but it is very handy to keep all the dependencies aligned among modules-->
+        <spring-boot-dependencies.version>2.5.7</spring-boot-dependencies.version>
+        <kotlin.version>1.5.31</kotlin.version>
+        <kotlinx.version>1.5.2</kotlinx.version>
         <kotlin-maven-plugin.jvmTarget>11</kotlin-maven-plugin.jvmTarget>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <!--Actually, the next property is not required here, but it is very handy to keep all the dependencies aligned among modules-->
-        <spring-boot-dependencies.version>2.4.3</spring-boot-dependencies.version>
     </properties>
 
     <dependencies>

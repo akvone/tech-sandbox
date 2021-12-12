@@ -31,3 +31,6 @@ Most services use `sandbox`/`sandbox` as user/password pairs
 * shared
     * shared-resources
     * shared-utils
+
+## Developer documentation
+See [developer documentation](docs/DEV.md)
