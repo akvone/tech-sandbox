@@ -16,15 +16,16 @@ class BasicReactiveUserDetailsServiceUpdater(
     }
 
     private fun getCurrentBasicAuthUsersDetails(): Map<String, UserDetailsWithRequestRestrictions> = mapOf(
+        generateUserPair("sandbox", "sandbox"),
         generateUserPair("first"),
         generateUserPair("second"),
     )
 
-    private fun generateUserPair(username: String): Pair<String, UserDetailsWithRequestRestrictions> {
+    private fun generateUserPair(username: String, password: String = "$username-password"): Pair<String, UserDetailsWithRequestRestrictions> {
         return username to UserDetailsWithRequestRestrictions(
             User.withDefaultPasswordEncoder()
                 .username(username)
-                .password("$username-password")
+                .password(password)
                 .roles(BASIC_AUTHORITY_PREFIX)
                 .build(),
             "/$username-path",
