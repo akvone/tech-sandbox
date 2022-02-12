@@ -6,7 +6,6 @@ management:
 spring:
   config:
     import:
-      - shared/actuator.yaml
-      - shared/server.yaml
+      - shared/for-microservices.yaml
       - feature_config/properties-state.yaml
       - feature_config/encrypted-properties.yaml
