@@ -3,6 +3,7 @@ spring:
     import:
       - shared/actuator.yaml
       - shared/server.yaml
+      - shared/spring-boot-admin-client.yaml
       - feature_config/profile/main.yaml
       - feature_config/caching.yaml
       - feature_config/dynamic_properties.yaml

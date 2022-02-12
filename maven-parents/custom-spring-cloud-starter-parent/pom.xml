@@ -23,6 +23,7 @@
   <properties>
     <spring-cloud.version>2021.0.0</spring-cloud.version>
     <springdoc-openapi-ui.version>1.6.1</springdoc-openapi-ui.version>
+    <spring-boot-admin.version>2.6.2</spring-boot-admin.version>
   </properties>
 
   <dependencies>
@@ -42,6 +43,10 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
+    <dependency>
+      <groupId>de.codecentric</groupId>
+      <artifactId>spring-boot-admin-starter-client</artifactId>
+    </dependency>
     <!--Test-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -49,6 +54,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>de.codecentric</groupId>
+        <artifactId>spring-boot-admin-dependencies</artifactId>
+        <version>${spring-boot-admin.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <plugins>
