@@ -1,4 +1,4 @@
-package com.example.demo
+package com.akvone.sandbox.admin
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration
