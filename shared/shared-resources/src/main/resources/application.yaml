@@ -1,0 +1,9 @@
+# Note! This file is used only for IDEA support
+#       It will be removed from resources by maven-resources-plugin. See pom.xml
+spring:
+  config:
+    import:
+      - shared/actuator.yaml
+      - shared/for-microservices.yaml
+      - shared/server.yaml
+      - shared/spring-boot-admin-client.yaml

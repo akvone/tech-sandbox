@@ -1,0 +1,6 @@
+spring:
+  config:
+    import:
+      - actuator.yaml
+      - server.yaml
+      - spring-boot-admin-client.yaml
