@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: spring-boot-postgresql
   config:
     import:
       - shared/for-microservices.yaml

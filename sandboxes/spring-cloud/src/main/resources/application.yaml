@@ -1,9 +1,6 @@
-management:
-  endpoint:
-    env:
-      post:
-        enabled: true
 spring:
+  application:
+    name: spring-cloud
   config:
     import:
       - shared/for-microservices.yaml

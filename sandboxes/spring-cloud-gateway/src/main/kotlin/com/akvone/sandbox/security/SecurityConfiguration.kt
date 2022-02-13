@@ -9,6 +9,8 @@ import org.springframework.security.config.annotation.web.reactive.EnableWebFlux
 import org.springframework.security.config.web.server.SecurityWebFiltersOrder
 import org.springframework.security.config.web.server.ServerHttpSecurity
 import org.springframework.security.web.server.SecurityWebFilterChain
+import org.springframework.security.web.server.util.matcher.NegatedServerWebExchangeMatcher
+import org.springframework.security.web.server.util.matcher.ServerWebExchangeMatchers
 
 @Configuration
 @EnableWebFluxSecurity
@@ -28,7 +30,8 @@ class SecurityConfiguration {
         http.addFilterAt(customAuthenticationWebFilter, SecurityWebFiltersOrder.AUTHENTICATION)
         val combinedManager = CombinedReactiveAuthorizationManager()
 
-        http.authorizeExchange().anyExchange().access(combinedManager)
+        http.authorizeExchange().matchers(NegatedServerWebExchangeMatcher(ServerWebExchangeMatchers.pathMatchers("/actuator/*"))).access(combinedManager)
+        http.authorizeExchange().pathMatchers("/actuator/*").permitAll()
 
         return http.build()
     }

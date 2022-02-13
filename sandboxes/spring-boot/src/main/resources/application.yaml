@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: spring-boot
   config:
     import:
       - shared/for-microservices.yaml
@@ -11,5 +13,3 @@ spring:
     cloud-platform: kubernetes
   profiles:
     active: prod, feature-jcache
-  application:
-    name: spring-boot-sandbox

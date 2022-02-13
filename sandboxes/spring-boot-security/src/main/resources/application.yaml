@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spring-boot-security
+  config:
+    import:
+      - shared/for-microservices.yaml
