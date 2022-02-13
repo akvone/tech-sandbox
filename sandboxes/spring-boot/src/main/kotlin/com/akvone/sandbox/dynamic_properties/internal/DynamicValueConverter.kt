@@ -20,9 +20,9 @@ class DynamicValueConverter : GenericConverter {
 
     override fun convert(source: Any?, sourceType: TypeDescriptor, targetType: TypeDescriptor): DynamicProperty<*> {
         if (targetType.hasAnnotation(DynamicPropertyKey::class.java)) {
-            return DynamicProperty(source, targetType.getAnnotation(DynamicPropertyKey::class.java).value)
+            return DynamicProperty(source, targetType.getAnnotation(DynamicPropertyKey::class.java)!!.value)
         } else if (targetType.hasAnnotation(Value::class.java)) {
-            val value = targetType.getAnnotation(Value::class.java).value
+            val value = targetType.getAnnotation(Value::class.java)!!.value
             val valueWithoutMetaSymbols = placeholderHelper.replacePlaceholders(value) { it }
             return DynamicProperty(source, valueWithoutMetaSymbols)
         }

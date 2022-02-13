@@ -20,6 +20,7 @@ class KubernetesEnvironmentProfileAdderPostProcessor : EnvironmentPostProcessor 
             val binder = Binder.get(environment)
             val runtimePropertyValue = environment[envVariableToSearchForRuntimeValue]
                 ?: throw IllegalStateException("Could not find property: $envVariableToSearchForRuntimeValue")
+            @Suppress("UNCHECKED_CAST")
             val propertyMappings = binder.bind(bootstrapPropertyMappingKey, Map::class.java)
                 .get() as Map<String, String>
             val additionalProfile = propertyMappings[runtimePropertyValue]

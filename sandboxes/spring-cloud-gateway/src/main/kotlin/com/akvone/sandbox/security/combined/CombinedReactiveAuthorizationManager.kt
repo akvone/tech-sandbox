@@ -24,7 +24,7 @@ class CombinedReactiveAuthorizationManager : ReactiveAuthorizationManager<Author
                     Mono.just(AuthorizationDecision(granted))
                 }
                 is CustomAuthentication -> {
-                    val granted = validate(it, context.exchange)
+                    val granted = validate()
                     Mono.just(AuthorizationDecision(granted))
                 }
                 else -> {
@@ -34,12 +34,7 @@ class CombinedReactiveAuthorizationManager : ReactiveAuthorizationManager<Author
         }
     }
 
-    private fun validate(
-        authentication: CustomAuthentication,
-        exchange: ServerWebExchange
-    ): Boolean {
-        return true // Replace with something meaningful
-    }
+    private fun validate(): Boolean = true /* Replace with something meaningful*/
 
     private fun validate(
         authentication: UsernamePasswordAuthenticationToken,

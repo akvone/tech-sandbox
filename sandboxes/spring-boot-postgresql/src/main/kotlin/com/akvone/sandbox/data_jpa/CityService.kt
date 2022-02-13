@@ -21,7 +21,7 @@ class CityService(
     }
 
     fun getCity(id: Long): City {
-        val cityEntity = cityRepository.getOne(id)
+        val cityEntity = cityRepository.getById(id)
         for (street in cityEntity.streets) {
             log.info("Found street [city={}, streets={}]", cityEntity.name, street.name)
         }
