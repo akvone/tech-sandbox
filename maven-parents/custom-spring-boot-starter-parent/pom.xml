@@ -17,14 +17,12 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>spring-boot-mixed-starter-parent</module>
+    <module>spring-boot-java-and-kotlin-starter-parent</module>
     <module>spring-boot-kotlin-starter-parent</module>
   </modules>
 
   <properties>
     <spring-boot.version>2.6.1</spring-boot.version>
-    <springdoc-openapi-ui.version>1.6.1</springdoc-openapi-ui.version>
-    <spring-boot-admin.version>2.6.2</spring-boot-admin.version>
   </properties>
 
   <dependencies>
@@ -32,12 +30,10 @@
     <dependency>
       <groupId>com.akvone.sandbox</groupId>
       <artifactId>shared-resources</artifactId>
-      <version>1.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.akvone.sandbox</groupId>
       <artifactId>shared-utils</artifactId>
-      <version>1.0-SNAPSHOT</version>
     </dependency>
     <!--Prod-->
     <dependency>
@@ -59,9 +55,9 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>de.codecentric</groupId>
-        <artifactId>spring-boot-admin-dependencies</artifactId>
-        <version>${spring-boot-admin.version}</version>
+        <groupId>com.akvone.sandbox</groupId>
+        <artifactId>sandbox-dependencies</artifactId>
+        <version>1.0-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
