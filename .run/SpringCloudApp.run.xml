@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SpringCloudApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+  <configuration default="false" name="SpringCloudApp (:8081)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <module name="spring-cloud" />
     <extension name="coverage">
       <pattern>

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SpringBootPostgresqlApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="SpringBootPostgresqlApp (:8085)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <module name="spring-boot-postgresql" />
     <extension name="coverage">
       <pattern>

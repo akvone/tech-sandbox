@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SpringBootApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="SpringBootApp (:8082)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <module name="spring-boot" />
     <extension name="coverage">
       <pattern>
