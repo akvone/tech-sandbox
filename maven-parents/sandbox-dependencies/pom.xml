@@ -12,12 +12,11 @@
 
     <artifactId>sandbox-dependencies</artifactId>
     <properties>
-        <spring-boot-dependencies.version>2.6.1</spring-boot-dependencies.version>
-        <spring-boot-admin.version>2.6.2</spring-boot-admin.version>
-        <kotlin.version>1.6.0</kotlin.version>
-        <kotlinx.version>1.5.2</kotlinx.version>
-        <testcontainers.version>1.16.3</testcontainers.version>
-        <springdoc-openapi-ui.version>1.6.1</springdoc-openapi-ui.version>
+        <spring-boot-dependencies.version>2.6.7</spring-boot-dependencies.version>
+        <spring-boot-admin.version>2.6.7</spring-boot-admin.version>
+        <kotlin.version>1.6.21</kotlin.version>
+        <testcontainers.version>1.17.1</testcontainers.version>
+        <springdoc-openapi-ui.version>1.6.8</springdoc-openapi-ui.version>
         <resilience4j.version>1.7.0</resilience4j.version>
     </properties>
 
@@ -45,13 +44,6 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-dependencies</artifactId>
                 <version>${spring-boot-admin.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.jetbrains.kotlinx</groupId>
-                <artifactId>kotlinx-coroutines-bom</artifactId>
-                <version>${kotlinx.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
