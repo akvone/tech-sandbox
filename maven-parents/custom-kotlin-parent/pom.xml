@@ -15,7 +15,7 @@
 
     <properties>
         <kotlin.version>1.6.21</kotlin.version>
-        <kotlin-maven-plugin.jvmTarget>11</kotlin-maven-plugin.jvmTarget>
+        <kotlin-maven-plugin.jvmTarget>1.8</kotlin-maven-plugin.jvmTarget>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
