@@ -3,6 +3,8 @@ package com.akvone.sandbox.security
 import com.akvone.sandbox.security.combined.CombinedReactiveAuthorizationManager
 import com.akvone.sandbox.security.custom.CustomAuthenticationWebFilter
 import com.akvone.sandbox.security.custom.CustomServerAuthenticationConverter
+import com.akvone.sandbox.swagger.AddSwaggerUrlsBeanPostProcessor.Companion.generateSwaggerProxyRootPath
+import com.akvone.sandbox.swagger.AggregatingSwaggerProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity
@@ -14,12 +16,12 @@ import org.springframework.security.web.server.util.matcher.ServerWebExchangeMat
 
 @Configuration
 @EnableWebFluxSecurity
-class SecurityConfiguration {
+class SecurityConfiguration(
+    private val customServerAuthenticationConverter: CustomServerAuthenticationConverter,
+    private val swaggerProperties: AggregatingSwaggerProperties
+) {
     @Bean
-    fun springSecurityFilterChain(
-        http: ServerHttpSecurity,
-        customServerAuthenticationConverter: CustomServerAuthenticationConverter,
-    ): SecurityWebFilterChain? {
+    fun springSecurityFilterChain(http: ServerHttpSecurity): SecurityWebFilterChain? {
         http.httpBasic()
         http.formLogin().disable()
         http.logout().disable()
@@ -32,8 +34,18 @@ class SecurityConfiguration {
 
         http.authorizeExchange().matchers(NegatedServerWebExchangeMatcher(ServerWebExchangeMatchers.pathMatchers("/actuator/*"))).access(combinedManager)
         http.authorizeExchange().pathMatchers("/actuator/*").permitAll()
+        configureSecurityForSwagger(http)
 
         return http.build()
+    }
+
+    private fun configureSecurityForSwagger(http: ServerHttpSecurity) {
+        http.authorizeExchange().pathMatchers("/swagger-ui.html").permitAll()
+        http.authorizeExchange().pathMatchers("/webjars/swagger-ui/*").permitAll()
+        http.authorizeExchange().pathMatchers("/v3/api-docs/swagger-config").permitAll()
+        swaggerProperties.routes.forEach {
+            http.authorizeExchange().pathMatchers("${generateSwaggerProxyRootPath(it.key)}/v3/api-docs").permitAll()
+        }
     }
 
 }

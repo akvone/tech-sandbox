@@ -12,14 +12,30 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: after_route
-          uri: https://quiet-star-2981.getsandbox.com:443
+        - id: spring-boot
+          uri: http://localhost:8082
           predicates:
-            - Path=/{segment}
+            - Path=/spring-boot/**
           filters:
-            - Security
+            - RewritePath=/spring-boot/?(?<segment>.*), /$\{segment}
+        - id: spring-cloud
+          uri: http://localhost:8081
+          predicates:
+            - Path=/spring-cloud/**
+          filters:
+            - RewritePath=/spring-cloud/?(?<segment>.*), /$\{segment}
+      default-filters:
+        - Security
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+
+custom:
+  swagger-ui:
+    routes:
+      spring-boot:
+        contextPath: /spring-boot
+      spring-cloud:
+        contextPath: /spring-cloud
