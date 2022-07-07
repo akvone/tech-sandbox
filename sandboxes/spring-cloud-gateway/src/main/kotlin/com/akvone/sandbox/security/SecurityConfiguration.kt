@@ -34,17 +34,17 @@ class SecurityConfiguration(
 
         http.authorizeExchange().matchers(NegatedServerWebExchangeMatcher(ServerWebExchangeMatchers.pathMatchers("/actuator/*"))).access(combinedManager)
         http.authorizeExchange().pathMatchers("/actuator/*").permitAll()
-        configureSecurityForSwagger(http)
+        http.configureSecurityForSwagger()
 
         return http.build()
     }
 
-    private fun configureSecurityForSwagger(http: ServerHttpSecurity) {
-        http.authorizeExchange().pathMatchers("/swagger-ui.html").permitAll()
-        http.authorizeExchange().pathMatchers("/webjars/swagger-ui/*").permitAll()
-        http.authorizeExchange().pathMatchers("/v3/api-docs/swagger-config").permitAll()
+    private fun ServerHttpSecurity.configureSecurityForSwagger() {
+        authorizeExchange().pathMatchers("/swagger-ui.html").permitAll()
+        authorizeExchange().pathMatchers("/webjars/swagger-ui/*").permitAll()
+        authorizeExchange().pathMatchers("/v3/api-docs/swagger-config").permitAll()
         swaggerProperties.routes.forEach {
-            http.authorizeExchange().pathMatchers("${generateSwaggerProxyRootPath(it.key)}/v3/api-docs").permitAll()
+            authorizeExchange().pathMatchers("${generateSwaggerProxyRootPath(it.key)}/v3/api-docs").permitAll()
         }
     }
 
