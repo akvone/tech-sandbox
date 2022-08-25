@@ -1,14 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="SpringBootApp (:8082)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-    <module name="spring-boot" />
-    <extension name="coverage">
-      <pattern>
-        <option name="PATTERN" value="com.akvone.sandbox.*" />
-        <option name="ENABLED" value="true" />
-      </pattern>
-    </extension>
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.SpringBootApp" />
-    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="ACTIVE_PROFILES" />
     <additionalParameters>
       <param>
         <option name="enabled" value="true" />
@@ -16,6 +8,14 @@
         <option name="value" value="8082" />
       </param>
     </additionalParameters>
+    <module name="spring-boot" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.SpringBootApp" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.akvone.sandbox.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
