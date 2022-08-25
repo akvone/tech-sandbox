@@ -23,18 +23,6 @@ class FaultTolerantService(
             .build()
     )
 
-    fun execute(failureChance: Double, delay: Long) {
-        execute(isSuccessful(failureChance), delay)
-    }
-
-    fun isSuccessful(failureChance: Double): Boolean {
-        if (failureChance < 0 || failureChance > 1) {
-            throw IllegalArgumentException()
-        }
-
-        return Random.nextDouble() > failureChance
-    }
-
 
     fun execute(successful: Boolean, delay: Long) {
         circuitBreaker.executeRunnable {

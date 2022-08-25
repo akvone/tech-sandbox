@@ -17,6 +17,7 @@
         <module>spring-boot-security</module>
         <module>spring-cloud</module>
         <module>spring-cloud-gateway</module>
+        <module>traffic-generator</module>
     </modules>
 
 </project>
