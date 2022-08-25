@@ -22,4 +22,4 @@ if ($?){
 } else {
   echo "Helm is not installed"
 }
-echo "Helm installation/upgrade is not supported. Do it manually: https://helm.sh/docs/intro/install/"
+echo "Helm installation/upgrade is not supported. Do it manually: https://helm.sh/docs/intro/inst/all"

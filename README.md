@@ -1,7 +1,7 @@
 # Why does this project exist?
 
-The main purpose of the `sandbox` project is to give a starting point with an existing code base to play with different
-frameworks, libraries, and technologies.
+The primary purpose of the `sandbox` project is to give a starting point with an existing code base to play with different
+frameworks, libraries, and technologies commonly used in Java / Kotlin enterprise development.
 
 # Prerequisites
 
@@ -30,15 +30,17 @@ Most services use `sandbox`/`sandbox` as user/password pairs
     * shared-resources
     * shared-utils
 
-# Setup minikube (for Windows only)
+# Windows automatizations
+## Minikube (local kubernetes)
 
 To set up everything, execute:
 0. [Install winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) if needed
 1. [install-or-upgrade-all.ps1](infrastructure/minikube/install-or-upgrade-all.ps1) (May require restarting terminal)
 2. [start.ps1](infrastructure/minikube/start.ps1)
+3. Run `minikube tunnel` in 2nd terminal
+3. Run `helm install sandbox .` in 3rd terminal
+4. Go to http://localhost
 
 To stop minikube, execute: 
 1. [stop.ps1](infrastructure/minikube/stop.ps1)
 
-## Developer documentation
-See [developer documentation](docs/DEV.md)
