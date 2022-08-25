@@ -1,1 +1,0 @@
-kubectl expose deployment spring-boot --type=LoadBalancer --port=8081 --target-port=main

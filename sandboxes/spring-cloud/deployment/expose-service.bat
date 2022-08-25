@@ -1,1 +1,0 @@
-kubectl expose deployment spring-cloud --type=LoadBalancer --port=8082 --target-port=main
