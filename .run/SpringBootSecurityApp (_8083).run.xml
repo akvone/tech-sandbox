@@ -9,7 +9,7 @@
       </param>
     </additionalParameters>
     <module name="spring-boot-security" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.security.SpringBootSecurityApp" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.SpringBootSecurityApp" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.akvone.sandbox.security.*" />

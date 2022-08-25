@@ -1,7 +1,6 @@
-package com.akvone.sandbox.trafficgenerator.service
+package com.akvone.sandbox.service
 
 import com.akvone.sandbox.buildLogger
-import com.akvone.sandbox.trafficgenerator.service.Service.SPRING_BOOT
 import kotlinx.coroutines.runBlocking
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
@@ -97,7 +96,7 @@ class SpringBootTrafficGenerator(
     fun execute(successful: Boolean, delay: Long) {
         runBlocking {
             try {
-                val url = servicesProperties.get(SPRING_BOOT).url
+                val url = servicesProperties.get(Service.SPRING_BOOT).url
                 val status = webClient.get()
                     .uri("$url/metrics/state?successful=$successful&delay=$delay")
                     .awaitExchange { it.statusCode() }

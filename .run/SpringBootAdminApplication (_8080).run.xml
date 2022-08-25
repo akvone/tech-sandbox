@@ -9,7 +9,7 @@
       </param>
     </additionalParameters>
     <module name="spring-boot-admin" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.admin.SpringBootAdminApplication" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.SpringBootAdminApp" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.akvone.sandbox.admin.*" />

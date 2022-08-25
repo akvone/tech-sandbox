@@ -9,7 +9,7 @@
       </param>
     </additionalParameters>
     <module name="traffic-generator" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.trafficgenerator.TrafficGeneratorApp" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.akvone.sandbox.TrafficGeneratorApp" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.akvone.sandbox.trafficgenerator.*" />

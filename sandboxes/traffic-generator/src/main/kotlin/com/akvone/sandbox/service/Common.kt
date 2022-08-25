@@ -1,4 +1,4 @@
-package com.akvone.sandbox.trafficgenerator.service
+package com.akvone.sandbox.service
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding

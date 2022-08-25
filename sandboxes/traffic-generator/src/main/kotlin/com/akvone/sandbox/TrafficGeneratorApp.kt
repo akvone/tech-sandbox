@@ -1,4 +1,4 @@
-package com.akvone.sandbox.trafficgenerator
+package com.akvone.sandbox
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan
