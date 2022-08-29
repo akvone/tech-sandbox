@@ -14,7 +14,3 @@ spring:
     url: "jdbc:postgresql://localhost:5432/sandbox"
     username: "sandbox"
     password: "sandbox"
-
-#logging:
-#  level:
-#    org.springframework: debug
