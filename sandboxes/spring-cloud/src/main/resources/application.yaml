@@ -4,5 +4,5 @@ spring:
   config:
     import:
       - shared/for-microservices.yaml
-      - feature_config/properties-state.yaml
-      - feature_config/encrypted-properties.yaml
+      - features/properties-state.yaml
+      - features/encrypted-properties.yaml

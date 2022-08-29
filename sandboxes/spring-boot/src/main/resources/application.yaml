@@ -4,6 +4,6 @@ spring:
   config:
     import:
       - shared/for-microservices.yaml
-      - feature_config/dynamic_properties.yaml
-      - feature_config/metrics.yaml
-      - feature_config/properties_conversion.yaml
+      - features/dynamic_properties.yaml
+      - features/metrics.yaml
+      - features/properties_conversion.yaml
