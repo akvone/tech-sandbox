@@ -14,3 +14,6 @@ spring:
     url: "jdbc:postgresql://localhost:5432/sandbox"
     username: "sandbox"
     password: "sandbox"
+---
+spring.config.activate.on-cloud-platform: kubernetes
+spring.datasource.url: "jdbc:postgresql://sandbox-postgresql:5432/sandbox"
