@@ -4,12 +4,9 @@ spring:
   config:
     import:
       - shared/for-microservices.yaml
-      - feature_config/profile/main.yaml
       - feature_config/caching.yaml
       - feature_config/dynamic_properties.yaml
       - feature_config/metrics.yaml
       - feature_config/properties_conversion.yaml
-  main:
-    cloud-platform: kubernetes
   profiles:
     active: prod, feature-jcache

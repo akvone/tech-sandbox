@@ -1,0 +1,4 @@
+spring:
+  config:
+    import:
+      - classpath:config/feature_config/profile/main.yaml
