@@ -34,13 +34,16 @@ Most services use `sandbox`/`sandbox` as user/password pairs
 ## Minikube (local kubernetes)
 
 To set up everything, execute:
-0. [Install winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) if needed
-1. [install-or-upgrade-all.ps1](infrastructure/minikube/install-or-upgrade-all.ps1) (May require restarting terminal)
-2. [start.ps1](infrastructure/minikube/start.ps1)
-3. Run `minikube tunnel` in 2nd terminal
-3. Run `helm install sandbox .` in 3rd terminal
-4. Go to http://localhost
+1. Run [Install winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) if needed
+2. Run `.\infrastructure\minikube\install-or-upgrade-all.ps1` (May require restarting terminal)
+3. Open 1st terminal
+   * Run `.\infrastructure\minikube\start.ps1`
+4. Open 2nd terminal
+   * Run `minikube tunnel`
+5. Open 3rd terminal
+   * Run `helm install sandbox .\infrastructure\helm\sandbox-chart`
+6. Go to http://localhost
 
 To stop minikube, execute: 
-1. [stop.ps1](infrastructure/minikube/stop.ps1)
+1. Run `.\infrastructure\minikube\stop.ps1`
 
