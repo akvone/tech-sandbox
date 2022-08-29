@@ -4,9 +4,6 @@ spring:
   config:
     import:
       - shared/for-microservices.yaml
-      - feature_config/caching.yaml
       - feature_config/dynamic_properties.yaml
       - feature_config/metrics.yaml
       - feature_config/properties_conversion.yaml
-  profiles:
-    active: prod, feature-jcache

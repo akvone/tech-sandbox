@@ -2,3 +2,4 @@ spring:
   config:
     import:
       - classpath:config/feature_config/profile/main.yaml
+      - classpath:config/feature_config/caching.yaml
