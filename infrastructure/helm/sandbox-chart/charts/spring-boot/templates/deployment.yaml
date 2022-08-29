@@ -1,0 +1,3 @@
+{{ include "sandbox-chart.deployment" . }}
+---
+{{ include "sandbox-chart.service" . }}

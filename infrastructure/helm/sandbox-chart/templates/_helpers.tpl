@@ -1,25 +1,26 @@
+{{- define "sandbox-chart.deployment" }}
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: spring-cloud
+  name: {{.Values.ComponentName}}
   namespace: default
   generation: 2
   labels:
-    k8s-app: spring-cloud
+    k8s-app: {{.Values.ComponentName}}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      k8s-app: spring-cloud
+      k8s-app: {{.Values.ComponentName}}
   template:
     metadata:
-      name: spring-cloud
+      name: {{.Values.ComponentName}}
       labels:
-        k8s-app: spring-cloud
+        k8s-app: {{.Values.ComponentName}}
     spec:
       containers:
-        - name: spring-cloud
-          image: 'akvone/sandbox-spring-cloud:1.0-SNAPSHOT'
+        - name: {{.Values.ComponentName}}
+          image: 'akvone/sandbox-{{.Values.ComponentName}}:1.0-SNAPSHOT'
           resources: { }
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
@@ -45,3 +46,18 @@ spec:
       maxSurge: 25%
   revisionHistoryLimit: 10
   progressDeadlineSeconds: 600
+{{- end }}
+
+{{- define "sandbox-chart.service" }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{.Values.ComponentName}}
+spec:
+  selector:
+    k8s-app: {{.Values.ComponentName}}
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+{{- end }}

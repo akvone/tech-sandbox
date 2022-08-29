@@ -1,0 +1,15 @@
+# For _helpers.tpl. These values won't be used in final charts
+ComponentName: sandbox-component-name
+
+# Dependencies
+global:
+  postgresql:
+    auth:
+      username: sandbox
+      password: sandbox
+      database: sandbox
+grafana:
+  service:
+    port: 8080
+  adminUser: sandbox
+  adminPassword: sandbox

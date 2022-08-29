@@ -1,0 +1,1 @@
+This message will appear as a part of helm installation. See {{.Release.Namespace}} namespace
