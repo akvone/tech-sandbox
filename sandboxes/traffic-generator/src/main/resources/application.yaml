@@ -2,4 +2,3 @@ spring:
   config:
     import:
       - shared/for-microservices.yaml
-      - services.yaml

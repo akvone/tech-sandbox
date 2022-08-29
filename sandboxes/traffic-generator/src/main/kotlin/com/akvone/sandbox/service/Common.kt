@@ -3,7 +3,7 @@ package com.akvone.sandbox.service
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding
 
-@ConfigurationProperties
+@ConfigurationProperties(prefix = "sandbox")
 @ConstructorBinding
 data class ServicesProperties(
     val services: Map<Service, ServiceProperties>

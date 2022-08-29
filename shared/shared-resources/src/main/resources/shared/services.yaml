@@ -1,0 +1,35 @@
+spring.config.activate.on-profile: dev
+sandbox:
+  services:
+    spring-boot-admin:
+      url: http://localhost:8080
+    spring-cloud:
+      url: http://localhost:8081
+    spring-boot:
+      url: http://localhost:8082
+    spring-boot-security:
+      url: http://localhost:8083
+    spring-cloud-gateway:
+      url: http://localhost:8084
+    spring-boot-postgresql:
+      url: http://localhost:8085
+    traffic-generator:
+      url: http://localhost:8086
+---
+spring.config.activate.on-cloud-platform: kubernetes
+sandbox:
+  services:
+    spring-boot-admin:
+      url: http://spring-boot-admin:8080
+    spring-cloud:
+      url: http://spring-cloud:8080
+    spring-boot:
+      url: http://spring-boot:8080
+    spring-boot-security:
+      url: http://spring-boot-security:8080
+    spring-cloud-gateway:
+      url: http://spring-cloud-gateway:8080
+    spring-boot-postgresql:
+      url: http://spring-boot-postgresql:8080
+    traffic-generator:
+      url: http://traffic-generator:8080

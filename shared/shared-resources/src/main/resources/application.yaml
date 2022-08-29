@@ -3,7 +3,8 @@
 spring:
   config:
     import:
-      - shared/actuator.yaml
+      - shared/management.yaml
       - shared/for-microservices.yaml
       - shared/server.yaml
+      - shared/services.yaml
       - shared/spring-boot-admin-client.yaml
