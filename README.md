@@ -33,9 +33,42 @@ Most services use `sandbox`/`sandbox` as user/password pairs
     * shared-resources
     * shared-utils
 
-# Windows automatizations
+# Minikube (local Kubernetes)
 
-## Minikube (local kubernetes)
+If you set up everything you will get this deployment:
+
+```mermaid
+graph TD;
+    gr[grafana]
+    in[influxdb]
+    po[postgresql]
+    
+    sb[spring-boot]
+    sba[spring-boot-admin]
+    sbp[spring-boot-postgresql]
+    sbs[spring-boot-security]
+    sc[spring-cloud]
+    scg[spring-cloud-gateway]
+    tg[traffic-generator]
+    
+    
+    
+    subgraph Minikube
+        sba --> sb
+        sba --> sbp
+        sba --> sbs
+        sba --> sc
+        sba --> scg
+        sba --> tg
+        
+        sbp --> po
+        
+        sb --> in
+        gr --> in
+    end
+```
+
+# Windows automatizations
 
 To set up everything, execute:
 
@@ -53,4 +86,3 @@ To set up everything, execute:
 To stop minikube, execute:
 
 1. Run `.\infrastructure\minikube\stop.ps1`
-
