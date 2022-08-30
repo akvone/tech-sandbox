@@ -7,3 +7,6 @@ management:
         user-name: sandbox
         uri: http://localhost:8086
         step: 10s
+---
+spring.config.activate.on-cloud-platform: kubernetes
+management.metrics.export.influx.uri: http://sandbox-influxdb:8086
