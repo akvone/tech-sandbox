@@ -4,7 +4,8 @@ $components =
     "spring-boot-postgresql",
     "spring-boot-security",
     "spring-cloud",
-    "spring-cloud-gateway"
+    "spring-cloud-gateway",
+    "traffic-generator"
 Foreach ($component in $components)
 {
     echo "Pushing $component"
