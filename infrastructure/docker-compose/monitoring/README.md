@@ -22,8 +22,8 @@ No additional configuration is required
 ## Chronograf
 1. To add InfluxDB connection use: 
     1. `http://influxdb:8086` Connection URL
-    3. `sandbox` Username
-    4. `sandbox` Password
+    2. `sandbox` Username
+    3. `sandbox` Password
 
 # Usages:
 1. [spring-boot](../../../sandboxes/spring-boot/README.md#metrics-for-resilience4j)
