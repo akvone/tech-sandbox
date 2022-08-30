@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SpringBootAdminApplication (:8080)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="SpringBootAdminApplication (:8100)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <option name="ACTIVE_PROFILES" />
     <additionalParameters>
       <param>
         <option name="enabled" value="true" />
         <option name="name" value="server.port" />
-        <option name="value" value="8080" />
+        <option name="value" value="8100" />
       </param>
     </additionalParameters>
     <module name="spring-boot-admin" />
