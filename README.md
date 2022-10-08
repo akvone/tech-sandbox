@@ -68,21 +68,25 @@ graph TD;
     end
 ```
 
-# Windows automatizations
+## Windows automations
 
-To set up everything, execute:
+To set up everything:
 
-1. Run [Install winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) if needed
+1. [Install winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) if needed
 2. Run `.\infrastructure\minikube\install-or-upgrade-all.ps1` (May require restarting terminal)
 3. Run in 1st terminal
-    * Run `.\infrastructure\minikube\start.ps1`
+    * `.\infrastructure\minikube\start.ps1`
 4. Run in 2nd terminal
     * `minikube tunnel`
+    * `minikube service --all`
 5. Run in 3rd terminal
     * `helm dependency update .\infrastructure\helm\sandbox-chart`
     * `helm install sandbox .\infrastructure\helm\sandbox-chart`
 6. Go to http://localhost
 
-To stop minikube, execute:
+To stop minikube:
 
-1. Run `.\infrastructure\minikube\stop.ps1`
+* Run `.\infrastructure\minikube\stop.ps1`
+
+To remove all installed software:
+* Run `.\infrastructure\minikube\start.ps1`
