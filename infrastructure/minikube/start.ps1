@@ -1,11 +1,17 @@
-get-process "Docker Desktop" > $null 2>&1
-if ($?){
-  echo "Docker is running"
-} else {
+docker version --format '{{.Server.Os}}-{{.Server.Version}}'
+if (!($?)){
   echo "Start Docker Desktop"
   start "C:\Program Files\Docker\Docker\Docker Desktop.exe"
-  Start-Sleep -Seconds 30
 }
+
+docker version --format '{{.Server.Os}}-{{.Server.Version}}'
+while (!($?)){
+  echo "Waiting for Docker Desktop to become ready"
+  Start-Sleep -Seconds 1
+  docker version --format '{{.Server.Os}}-{{.Server.Version}}'
+}
+
+echo "Docker is ready"
 
 # Read https://minikube.sigs.k8s.io/docs/start/
 minikube start
