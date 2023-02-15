@@ -1,8 +1,3 @@
-# Why does this project exist?
-
-The primary purpose of the `sandbox` project is to give a starting point with an existing code base to play with
-different frameworks, libraries, and technologies commonly used in Java / Kotlin enterprise development.
-
 # Prerequisites
 
 * Maven
