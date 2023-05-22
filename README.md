@@ -78,15 +78,16 @@ To set up everything:
     * `.\infrastructure\minikube\start.ps1`
 4. Run in 2nd terminal
     * `minikube tunnel`
-    * `minikube service --all`
 5. Run in 3rd terminal
+    * `minikube service --all`
+6. Run in 4th terminal
     * `helm dependency update .\infrastructure\helm\sandbox-chart`
     * `helm install sandbox .\infrastructure\helm\sandbox-chart`
-6. Go to http://localhost
+7. Go to http://localhost
 
 To stop minikube:
 
 * Run `.\infrastructure\minikube\stop.ps1`
 
 To remove all installed software:
-* Run `.\infrastructure\minikube\start.ps1`
+* Run `.\infrastructure\minikube\uninstall-all.ps1`
