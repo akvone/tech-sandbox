@@ -1,3 +1,5 @@
+$env:PATH = [System.Environment]::GetEnvironmentVariable("PATH", "Machine") + [System.Environment]::GetEnvironmentVariable("PATH", "User")  # Refreshes PATH variable
+
 docker version --format '{{.Server.Os}}-{{.Server.Version}}'
 if (!($?)){
   echo "Start Docker Desktop"
