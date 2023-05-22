@@ -78,12 +78,11 @@ To set up everything:
     * `.\infrastructure\minikube\start.ps1`
 4. Run in 2nd terminal
     * `minikube tunnel`
-5. Run in 3rd terminal
-    * `minikube service --all`
-6. Run in 4th terminal
+6. Run in 3rd terminal
     * `helm dependency update .\infrastructure\helm\sandbox-chart`
-    * `helm install sandbox .\infrastructure\helm\sandbox-chart`
-7. Go to http://localhost
+    * `helm upgrade --install sandbox .\infrastructure\helm\sandbox-chart`
+    * Wait for all pods to be in `Running` state ...
+    * `minikube service --all` 
 
 To stop minikube:
 

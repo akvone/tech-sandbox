@@ -1,7 +1,7 @@
 helm version > $null 2>&1
 if ($?){
-  echo "Helm is installed. Upgrading it"
-  winget upgrade Helm.Helm
+  echo "Helm is installed"
+  winget upgrade Helm.Helm --version 3.11.3
 } else {
   echo "Helm is not installed. Installing it"
   winget install Helm.Helm
@@ -10,18 +10,18 @@ if ($?){
 
 docker -v > $null 2>&1
 if ($?){
-  echo "Docker is installed. Upgrading it"
-  winget upgrade "Docker Desktop"
+  echo "Docker is installed"
+#  winget upgrade "Docker Desktop"
 } else {
   echo "Docker is not installed. Installing it"
-  winget install "Docker Desktop"
+  winget install "Docker Desktop" --version 4.19.0
 }
 
 minikube version > $null 2>&1
 if ($?){
-  echo "Minikube is installed. Upgrading it"
-  winget upgrade minikube
+  echo "Minikube is installed"
+#  winget upgrade minikube
 } else {
   echo "Minikube is not installed. Installing it"
-  winget install minikube
+  winget install minikube --version 1.30.1
 }
